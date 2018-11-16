@@ -1,0 +1,66 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "bird singing",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "BirdName",
+                            "type": "BIRD_LIST"
+                        }
+                    ],
+                    "samples": [
+                        "{BirdName}",
+                        "play {BirdName}",
+                        "play bird sound",
+                        "play bird song",
+                        "play bird sing",
+                        "and play bird sound",
+                        "and play bird song",
+                        "and play bird sing"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "BIRD_LIST",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "seagulls"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pigeon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "owl"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
